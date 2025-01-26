@@ -3,6 +3,7 @@ import { createContext, useContext, useState } from "react";
 export const counterContext = createContext(null);
 
 export const CounterProvider = ({ children }) => {
+  // custom hooks
   const [count, setCount] = useState(0);
 
   function inc() {
